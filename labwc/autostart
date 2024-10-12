@@ -1,3 +1,4 @@
 swaybg -i ~/Wallpapers/Wallpaper1.png -m fill >/dev/null 2>&1 &
+lxqt-policykit-agent >/dev/null 2>&1 &
 kanshi >/dev/null 2>&1 &
 waybar >/dev/null 2>&1 &
