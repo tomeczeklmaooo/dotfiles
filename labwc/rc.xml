@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<labwc_config>
+	<!-- ALT-TAB MENU -->
+	<windowSwitcher>
+		<fields>
+			<field content="type_short" width="5%"></field>
+			<field content="trimmed_identifier" width="25%"></field>
+			<field content="title" width="70%"></field>
+		</fields>
+	</windowSwitcher>
+
+	<!-- WORKSPACES -->
+	<desktops number="3">
+		<names>
+			<name>www</name>
+		</names>
+		<names>
+			<name>social</name>
+		</names>
+		<names>
+			<name>editor/term</name>
+		</names>
+	</desktops>
+
+	<!-- THEME -->
+	<theme>
+		<name>Velnias</name>
+		<font place="ActiveWindow">
+			<name>Cantarell</name>
+			<slant>normal</slant>
+		</font>
+		<font place="InactiveWindow">
+			<name>Cantarell</name>
+			<slant>italic</slant>
+		</font>
+	</theme>
+
+	<!-- KEYBINDS -->
+	<keyboard>
+		<default />
+
+		<keybind key="A-Space">
+			<action>
+				<name>Execute</name>
+				<command>wofi --show drun -i --lines=6 --width=640 --hide-scroll</command>
+			</action>
+		</keybind>
+
+		<keybind key="W-S-s">
+			<action>
+				<name>Execute</name>
+				<command>bash -c "slurp -d | grim -g - - | wl-copy"</command>
+			</action>
+		</keybind>
+
+		<keybind key="C-A-l">
+			<action>
+				<name>Execute</name>
+				<command>labwc -e</command>
+			</action>
+		</keybind>
+
+		<keybind key="W-S-Left">
+			<action name="MoveToOutput" direction="left" wrap="no" />
+			<action name="FitToOutput" />
+		</keybind>
+		<keybind key="W-S-Right">
+			<action name="MoveToOutput" direction="right" wrap="no" />
+			<action name="FitToOutput" />
+		</keybind>
+		<keybind key="W-A-Left">
+			<action name="GoToDesktop" to="left" wrap="yes" />
+		</keybind>
+		<keybind key="W-A-Right">
+			<action name="GoToDesktop" to="right" wrap="yes" />
+		</keybind>
+	</keyboard>
+
+	<!-- MOUSE -->
+	<libinput>
+		<device category="non-touch">
+			<pointerSpeed>-0.2</pointerSpeed>
+			<accelProfile>flat</accelProfile>
+		</device>
+	</libinput>
+</labwc_config>
