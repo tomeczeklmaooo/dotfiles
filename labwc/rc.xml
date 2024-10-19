@@ -39,6 +39,11 @@
 	<keyboard>
 		<default />
 
+		<!--
+			SOFTWARE KEYBOARD SHORTCUTS :: misc
+		-->
+
+		<!-- APPLICATION RUNNER :: Alt+Space -->
 		<keybind key="A-Space">
 			<action>
 				<name>Execute</name>
@@ -46,6 +51,7 @@
 			</action>
 		</keybind>
 
+		<!-- SCREENSHOT :: Windows+Shift+S -->
 		<keybind key="W-S-s">
 			<action>
 				<name>Execute</name>
@@ -53,6 +59,7 @@
 			</action>
 		</keybind>
 
+		<!-- LOG OUT (EXIT LAWBC) :: Control+Alt+L -->
 		<keybind key="C-A-l">
 			<action>
 				<name>Execute</name>
@@ -60,6 +67,7 @@
 			</action>
 		</keybind>
 
+		<!-- WINDOW MANIPULATION :: Windows+Shift+[leftarrow|rightarrow|uparrow|downarrow] -->
 		<keybind key="W-S-Left">
 			<action name="MoveToOutput" direction="left" wrap="no" />
 			<action name="FitToOutput" />
@@ -68,11 +76,27 @@
 			<action name="MoveToOutput" direction="right" wrap="no" />
 			<action name="FitToOutput" />
 		</keybind>
+		<keybind key="W-S-Up">
+			<action name="Maximize" direction="both" />
+		</keybind>
+		<keybind key="W-S-Down">
+			<action name="UnMaximize" direction="both" />
+		</keybind>
+
+		<!-- SWITCH BETWEEN WORKSPACES :: Windows+Alt+[leftarrow|rightarrow] -->
 		<keybind key="W-A-Left">
 			<action name="GoToDesktop" to="left" wrap="yes" />
 		</keybind>
 		<keybind key="W-A-Right">
 			<action name="GoToDesktop" to="right" wrap="yes" />
+		</keybind>
+
+		<!-- MOVE WINDOWS BETWEEN WORKSPACES :: Control+Alt+[leftarrow|rightarrow] -->
+		<keybind key="C-A-Left">
+			<action name="SendToDesktop" to="left" follow="yes" wrap="yes" />
+		</keybind>
+		<keybind key="C-A-Right">
+			<action name="SendToDesktop" to="right" follow="yes" wrap="yes" />
 		</keybind>
 	</keyboard>
 

@@ -2,3 +2,4 @@ swaybg -i ~/Wallpapers/Wallpaper1.png -m fill >/dev/null 2>&1 &
 lxqt-policykit-agent >/dev/null 2>&1 &
 kanshi >/dev/null 2>&1 &
 waybar >/dev/null 2>&1 &
+pactl set-default-sink alsa_output.usb-Generic_USB_Audio-00.HiFi__Headphones__sink

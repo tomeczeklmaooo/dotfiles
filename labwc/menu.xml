@@ -61,5 +61,10 @@
 	  <action name="Execute"><command>dolphin</command></action>
 	</item>
   </menu> <!-- System -->
+  <separator />
+
+  <item label="Exit Labwc">
+	<action name="Execute"><command>labwc -e</command></action>
+  </item>
 </menu> <!-- root-menu -->
 </openbox_menu>
