@@ -51,7 +51,7 @@
     background: #131c26;
     color: white;
     /* font-family: Cantarell, Noto Sans, sans-serif; */
-    font-family: 'Iosevka Extended', monospace;
+    font-family: 'Iosevka Extended', monospace, 'Font Awesome 6 Free';
     font-size: 12px;
 	border-bottom: 1px dashed #1f2a36;
 }
