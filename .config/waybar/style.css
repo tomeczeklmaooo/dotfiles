@@ -20,10 +20,11 @@ window#waybar.hidden {
     /*margin-left: 6px;*/
     padding: 2px 16px;
 	border-bottom: 1px solid #8080ff;
+	opacity: 1;
 	/*border-bottom: 2px solid #f8f8f2;
-	border-radius: 26px;
-	transition: none;
-    color: #f8f8f2;
+	border-radius: 26px;*/
+	transition: 0.5s ease;
+    /*color: #f8f8f2;
 	background: #282a36;
     color: transparent;
 	background: transparent;*/
@@ -32,7 +33,7 @@ window#waybar.hidden {
 window#waybar.empty #window {
 	background: transparent;
 	color: transparent;
-	border: none;
+	opacity: 0;
 }
 
 /*window#waybar.termite #window,
