@@ -1,0 +1,76 @@
+# Set margins for specific edges of the window.
+margins:
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+# Set the edges to which the window will be anchored.
+#
+# - If two perpendicular edges are anchored (e.g. "top" and "left"), the
+#   surface with be anchored to that corner.
+# - If two opposite edges are anchored (e.g. "top" and "bottom"), the window
+#   will be stretched across the screen in that direction.
+anchors:
+  top: false
+  left: false
+  right: false
+  bottom: false
+
+# Set powermenu layout.
+layout:
+  spacing: 12                  # Spacing between options.
+  orientation: "horizontal"    # How to position options. Possible values: "horizontal", "vertical"
+
+# Option configuration.
+# This allows you to customize each option, including whether to enable the
+# option, the commands to execute, the order of the options, and more.
+hibernate:
+  enabled: false    # Whether to enabled the option
+  order: 1    # Order of the option. The smaller the value, the left (higher) it will appear.
+  icon: "$XDG_CONFIG_HOME/powermenu/icons/hibernate.svg" # Icon of the option.
+  command:
+    name: "systemctl"    # Name of the executable
+    args:                # Arguments provided to the executable.
+      - "hibernate"
+
+# Notice there is no default command for "lock". There is no generic way to
+# lock session, so it is to be configured by the end user.
+lock:
+  enabled: true
+  order: 2
+  icon: "$XDG_CONFIG_HOME/powermenu/icons/lock.svg"
+
+logout:
+  enabled: true
+  order: 3
+  icon: "$XDG_CONFIG_HOME/powermenu/icons/logout.svg"
+  command:
+    name: "pkill"
+    args:
+      - "-KILL"
+      - "-u"
+      - "$USER"    # Environment variables are supported.
+
+poweroff:
+  enabled: true
+  order: 4
+  icon: "$XDG_CONFIG_HOME/powermenu/icons/poweroff.svg"
+  command:
+    name: "poweroff"
+
+reboot:
+  enabled: true
+  order: 5
+  icon: "$XDG_CONFIG_HOME/powermenu/icons/reboot.svg"
+  command:
+    name: "reboot"
+
+suspend:
+  enabled: true
+  order: 6
+  icon: "$XDG_CONFIG_HOME/powermenu/icons/suspend.svg"
+  command:
+    name: "systemctl"
+    args:
+      - "suspend"

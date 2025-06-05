@@ -1,0 +1,23 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/moonfly.toml"
+]
+
+[window]
+dimensions = { columns = 140, lines = 35 }
+decorations = "None"
+opacity = 0.925
+blur = true
+startup_mode = "Maximized"
+
+[font]
+normal = { family = "Iosevka Extended", style = "Regular" }
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+
+[keyboard]
+bindings = [
+	{ key = "F11", mods = "Super", action = "ToggleFullscreen" },
+	{ key = "F11", mods = "Super|Shift", action = "ToggleMaximized" }
+]

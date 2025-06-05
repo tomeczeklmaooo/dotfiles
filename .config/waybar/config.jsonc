@@ -1,0 +1,75 @@
+{
+	"layer": "top",
+	"modules-left": ["hyprland/window"],
+	"modules-center": ["clock"],
+	"modules-right": ["custom/ipv4", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
+	"hyprland/window": {
+		"format": "  {title}",
+		"separate-outputs": true
+	},
+	"pulseaudio": {
+		"tooltip": true,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		},
+		"on-click": "pavucontrol",
+		"on-click-right": "jamesdsp"
+	},
+	"temperature": {
+		"tooltip": false,
+		"critical-threshold": 70,
+		"format-critical": "<span color='#ff0000'> {}°C</span>",
+		"format": " {}°C"
+	},
+	"custom/ipv4": {
+		"format": "  {}",
+		"exec": "ip -4 addr show | awk '/^\\s*[0-9]+: /{sub(/:/,\"\",$2); current_iface=$2;}/inet /{if (current_iface != \"lo\") {ip_cidr=$2; print current_iface \" \" ip_cidr; exit;}}'",
+		"interval": 5,
+		"tooltip": true
+	},
+/*	"network": {
+		"tooltip": false,
+		"interface": "enp4s0",
+		"family": "ipv4",
+		"format-ethernet": "{ipaddr}"
+	},*/
+	"custom/power": {
+		"format": " ",
+		"tooltip": false,
+		"on-click": "powermenu"
+	},
+	"cpu": {
+		"tooltip": true,
+		"format": "  {}%"
+	},
+	"memory": {
+		"tooltip": true,
+		"format": "  {}%"
+	},
+	"clock": {
+		"interval": 1,
+		"format": "  {:%H:%M:%S %d/%m/%Y}",
+		"format-alt": ":%A, %B %d, %Y (%R)",
+		"tooltip-format": "<tt><small>{calendar}</small></tt>",
+		"calendar": {
+			"mode": "year",
+			"mode-mon-col": 3,
+			"weeks-pos": "right",
+			"on-scroll": 1,
+			"format": {
+				"months": "<span color='#ffead3'><b>{}</b></span>",
+				"days": "<span color='#ecc6d9'><b>{}</b></span>",
+				"weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+				"today": "<span color='#ffead3'><b><u>{}</u></b></span>"
+			}
+		},
+		"actions": {
+			"on-click-right": "mode",
+			"on-scroll-up": "shift_up",
+			"on-scroll-down": "shift_down"
+		}
+	}
+}

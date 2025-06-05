@@ -1,0 +1,46 @@
+window {
+	margin: 0px;
+	/*border: 1px dashed #f8f8f2;*/
+	background-color: rgba(0, 0, 0, 0.7);
+	border-radius: 6px;
+	/* font-family: 'Cantarell', 'Noto Sans', sans-serif; */
+	/* font-family: 'Iosevka Extended', monospace; */
+	/* font-family: 'Inter', sans-serif; */
+	font-family: 'Iosevka Nerd Font', monospace;
+	font-size: 14px;
+}
+
+#input {
+	margin: 5px;
+	border: none;
+	color: #d8dee9;
+	background-color: rgba(40, 42, 54, 0.9);
+}
+
+#inner-box {
+	margin: 5px;
+	border: none;
+	/*background-color: #131c26;*/
+}
+
+#outer-box {
+	margin: 5px;
+	border: none;
+	/*background-color: #131c26;*/
+}
+
+#scroll {
+	margin: 0px;
+	border: none;
+}
+
+#text {
+	margin: 5px;
+	border: none;
+	color: #d8dee9;
+}
+
+#entry:selected {
+	background-color: rgba(40, 42, 54, 0.5);
+	border-radius: 4px;
+}
