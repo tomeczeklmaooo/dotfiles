@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["hyprland/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["custom/ipv4", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
+	"modules-right": ["tray", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
 	"hyprland/window": {
 		"format": "  {title}",
 		"separate-outputs": true
@@ -71,5 +71,9 @@
 			"on-scroll-up": "shift_up",
 			"on-scroll-down": "shift_down"
 		}
+	},
+	"tray": {
+		"icon-size": 16,
+		"spacing": 10
 	}
 }

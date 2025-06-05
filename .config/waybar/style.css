@@ -29,6 +29,12 @@ window#waybar.hidden {
 	background: transparent;*/
 }
 
+window#waybar.empty #window {
+	background: transparent;
+	color: transparent;
+	border: none;
+}
+
 /*window#waybar.termite #window,
 window#waybar.Firefox #window,
 window#waybar.Navigator #window,
@@ -162,4 +168,15 @@ window#waybar.PCSX2 #window {
 	margin: 4px;
 	padding: 2px 16px;
 	border-bottom: 1px solid #8080ff;
+}
+
+#tray {
+	margin: 4px;
+	padding: 2px 16px;
+	border-bottom: 1px solid #f8f8f2;
+}
+
+#tray menu {
+	background: rgba(0, 0, 0, 0.5);
+	color: #f8f8f2;
 }
