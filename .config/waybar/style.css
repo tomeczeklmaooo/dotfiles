@@ -19,7 +19,7 @@ window#waybar.hidden {
     margin: 4px;
     /*margin-left: 6px;*/
     padding: 2px 16px;
-	border-bottom: 1px solid #8080ff;
+	border-bottom: 1px solid #a020f0;
 	opacity: 1;
 	/*border-bottom: 2px solid #f8f8f2;
 	border-radius: 26px;*/
@@ -106,7 +106,7 @@ window#waybar.PCSX2 #window {
 	/*margin-top: 8px;*/
 	margin: 4px;
 	padding: 2px 16px;
-	border-bottom: 1px solid #9aedfe;
+	border-bottom: 1px solid #9932cc;
 	/*margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
@@ -118,7 +118,7 @@ window#waybar.PCSX2 #window {
 	/*margin-top: 8px;*/
 	margin: 4px;
 	padding: 2px 16px;
-	border-bottom: 1px solid #5af78e;
+	border-bottom: 1px solid #a744e0;
 	/*margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
@@ -130,7 +130,7 @@ window#waybar.PCSX2 #window {
 	/*margin-top: 8px;*/
 	margin: 4px;
 	padding: 2px 16px;
-	border-bottom: 1px solid #f1fa8c;
+	border-bottom: 1px solid #8a2be2;
 	/*margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
@@ -143,7 +143,7 @@ window#waybar.PCSX2 #window {
 	margin: 4px;
 	/*margin-right: 6px;*/
 	padding: 2px 16px;
-	border-bottom: 1px solid #ff6e67;
+	border-bottom: 1px solid #ba6ff7;
 	/*margin-bottom: 0;
 	border-radius: 26px;
 	transition: none;
@@ -156,7 +156,7 @@ window#waybar.PCSX2 #window {
 	/*margin-left: 8px;
 	margin-right: 10px;*/
 	padding: 2px 16px;
-	border-bottom: 1px solid #8080ff;
+	border-bottom: 1px solid #b355f5;
 	font-weight: 600;
 	/*margin-bottom: 0;
 	border-radius: 26px;
@@ -168,13 +168,13 @@ window#waybar.PCSX2 #window {
 #custom-power {
 	margin: 4px;
 	padding: 2px 16px;
-	border-bottom: 1px solid #8080ff;
+	border-bottom: 1px solid #a020f0;
 }
 
 #tray {
 	margin: 4px;
 	padding: 2px 16px;
-	border-bottom: 1px solid #f8f8f2;
+	border-bottom: 1px solid #912cd0;
 }
 
 #tray menu {
@@ -185,5 +185,5 @@ window#waybar.PCSX2 #window {
 #custom-updates {
 	margin: 4px;
 	padding: 2px 16px;
-	border-bottom: 1px solid #8080ff;
+	border-bottom: 1px solid #c48af7;
 }
