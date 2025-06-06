@@ -2,7 +2,7 @@
 	"layer": "top",
 	"modules-left": ["hyprland/window"],
 	"modules-center": ["clock"],
-	"modules-right": ["tray", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
+	"modules-right": ["tray", "custom/updates", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
 	"hyprland/window": {
 		"format": "  {title}",
 		"separate-outputs": true
@@ -19,15 +19,30 @@
 	},
 	"temperature": {
 		"tooltip": false,
-		"critical-threshold": 70,
-		"format-critical": "<span color='#ff0000'> {}°C</span>",
-		"format": " {}°C"
+		"thermal-zone": 3,
+		"critical-threshold": 80,
+		"format-critical": "<span color='#ff0000'>{icon} {temperatureC}°C</span>",
+		"format": "{icon} {temperatureC}°C",
+		"format-icons": {
+			"default": [" ", " ", " "]
+		},
+		"interval": 5
 	},
 	"custom/ipv4": {
 		"format": "  {}",
 		"exec": "ip -4 addr show | awk '/^\\s*[0-9]+: /{sub(/:/,\"\",$2); current_iface=$2;}/inet /{if (current_iface != \"lo\") {ip_cidr=$2; print current_iface \" \" ip_cidr; exit;}}'",
 		"interval": 5,
 		"tooltip": true
+	},
+	"custom/updates": {
+	    "format": "{} {icon}",
+	    "return-type": "json",
+	    "format-icons": {
+	        "has-updates": "󱍷",
+	        "updated": "󰂪"
+	    },
+	    "exec-if": "which waybar-module-pacman-updates",
+	    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 	},
 /*	"network": {
 		"tooltip": false,

@@ -181,3 +181,9 @@ window#waybar.PCSX2 #window {
 	background: rgba(0, 0, 0, 0.5);
 	color: #f8f8f2;
 }
+
+#custom-updates {
+	margin: 4px;
+	padding: 2px 16px;
+	border-bottom: 1px solid #8080ff;
+}
