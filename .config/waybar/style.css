@@ -11,170 +11,74 @@ window#waybar {
 	background: rgba(0, 0, 0, 0.7);
 }
 
+.module {
+	margin: 4px;
+	padding: 2px 16px;
+}
+
 window#waybar.hidden {
 	opacity: 0.2;
 }
-
 #window {
-    margin: 4px;
-    /*margin-left: 6px;*/
-    padding: 2px 16px;
-	border-bottom: 1px solid #a020f0;
 	opacity: 1;
-	/*border-bottom: 2px solid #f8f8f2;
-	border-radius: 26px;*/
 	transition: 0.5s ease;
-    /*color: #f8f8f2;
-	background: #282a36;
-    color: transparent;
-	background: transparent;*/
 }
-
 window#waybar.empty #window {
 	background: transparent;
 	color: transparent;
 	opacity: 0;
 }
 
-/*window#waybar.termite #window,
-window#waybar.Firefox #window,
-window#waybar.Navigator #window,
-window#waybar.PCSX2 #window {
-    color: #4d4d4d;
-	background: #e6e6e6;
-}*/
-
 #workspaces {
-	/*margin-top: 8px;*/
-	margin-left: 12px;
-	margin-bottom: 0;
-	/*border-radius: 26px;
-	background: #282a36;
-	transition: none;*/
+	transition: none;
 }
-
 #workspaces button {
 	transition: none;
-	color: #f8f8f2;
-	background: transparent;
-	font-size: 16px;
 }
-
 #workspaces button.focused {
 	color: #9aedfe;
 }
-
 #workspaces button:hover {
 	transition: none;
-	box-shadow: inherit;
-	text-shadow: inherit;
-	color: #ff79c6;
 }
-
-/*#mpd {
-	margin-top: 8px;
-	margin-left: 8px;
-	padding-left: 16px;
-	padding-right: 16px;
-	margin-bottom: 0;
-	border-radius: 26px;
-	background: #282a36;
-	transition: none;
-	color: #4d4d4d;
-	background: #5af78e;
-}
-
-#mpd.disconnected,
-#mpd.stopped {
-	color: #f8f8f2;
-	background: #282a36;
-}*/
 
 #network, #custom-ipv4 {
-	/*margin-top: 8px;*/
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #bd93f9;
-	/*margin-bottom: 0;
-	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #bd93f9;*/
 }
 
 #pulseaudio {
-	/*margin-top: 8px;*/
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #9932cc;
-	/*margin-bottom: 0;
-	border-radius: 26px;
-	transition: none;
-	color: #4d4d4d;
-	background: #9aedfe;*/
+	transition: 0.5s ease;
+}
+#pulseaudio:hover {
+	border-bottom: 1px solid #f8f8f2;
 }
 
 #temperature {
-	/*margin-top: 8px;*/
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #a744e0;
-	/*margin-bottom: 0;
-	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #5af78e;*/
 }
 
 #cpu {
-	/*margin-top: 8px;*/
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #8a2be2;
-	/*margin-bottom: 0;
-	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #f1fa8c;*/
 }
 
 #memory {
-	/*margin-top: 8px;*/
-	margin: 4px;
-	/*margin-right: 6px;*/
-	padding: 2px 16px;
-	border-bottom: 1px solid #ba6ff7;
-	/*margin-bottom: 0;
-	border-radius: 26px;
 	transition: none;
-	color: #4d4d4d;
-	background: #ff6e67;*/
 }
 
 #clock {
-	margin: 4px;
-	/*margin-left: 8px;
-	margin-right: 10px;*/
-	padding: 2px 16px;
-	border-bottom: 1px solid #b355f5;
 	font-weight: 600;
-	/*margin-bottom: 0;
-	border-radius: 26px;
 	transition: none;
-	color: #f8f8f2;
-	background: #282a36;*/
 }
 
 #custom-power {
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #a020f0;
+	transition: 0.5s ease;
+}
+#custom-power:hover {
+	border-bottom: 1px solid #f8f8f2;
 }
 
 #tray {
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #912cd0;
+	transition: none;
 }
 
 #tray menu {
@@ -183,7 +87,9 @@ window#waybar.PCSX2 #window {
 }
 
 #custom-updates {
-	margin: 4px;
-	padding: 2px 16px;
-	border-bottom: 1px solid #c48af7;
+	transition: none;
+}
+
+#custom-arch-logo {
+	font-size: 150%;
 }

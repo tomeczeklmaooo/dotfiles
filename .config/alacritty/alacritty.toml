@@ -5,10 +5,10 @@ import = [
 
 [window]
 dimensions = { columns = 140, lines = 35 }
-decorations = "None"
 opacity = 0.925
 blur = true
 startup_mode = "Maximized"
+dynamic_title = true
 
 [font]
 normal = { family = "Iosevka Extended", style = "Regular" }

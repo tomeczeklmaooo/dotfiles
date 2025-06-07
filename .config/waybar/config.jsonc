@@ -1,6 +1,6 @@
 {
 	"layer": "top",
-	"modules-left": ["hyprland/window"],
+	"modules-left": ["custom/arch-logo", "hyprland/window"],
 	"modules-center": ["clock"],
 	"modules-right": ["tray", "custom/updates", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
 	"hyprland/window": {
@@ -50,6 +50,10 @@
 		"family": "ipv4",
 		"format-ethernet": "{ipaddr}"
 	},*/
+	"custom/arch-logo": {
+		"format": "󰣇",
+		"tooltip": false
+	},
 	"custom/power": {
 		"format": " ",
 		"tooltip": false,
