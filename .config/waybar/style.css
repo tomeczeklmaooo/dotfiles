@@ -1,25 +1,48 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Iosevka Nerd Font", "Font Awesome 6 Free", "Font Awesome 6 Pro", "Font Awesome 6 Brands";
+	font-family: "Iosevka Nerd Font";
 	font-size: 14px;
-	min-height: 24px;
-	color: #f8f8f2;
+	box-shadow: none;
+	min-height: 0;
+	color: #dadada;
 }
 
 window#waybar {
-	background: rgba(0, 0, 0, 0.7);
+	background: rgba(8, 8, 8, 0.9);
+	margin: 4px;
+	border-radius: 6px;
+}
+window#waybar > box {
+	padding: 0px 4px;
 }
 
-.module {
-	margin: 4px;
-	padding: 2px 16px;
+tooltip {
+	background: rgba(8, 8, 8, 0.9);
+	border-radius: 6px;
+	font-size: 10px;
+}
+
+#custom-arch-logo,
+#window,
+#clock,
+#network, #custom-ipv4,
+#custom-updates,
+#pulseaudio,
+#temperature,
+#cpu,
+#memory,
+#tray {
+	border-radius: 0px;
+	margin: 4px 2px;
+	padding: 0px 6px;
 }
 
 window#waybar.hidden {
 	opacity: 0.2;
 }
 #window {
+	font-size: 10px;
 	opacity: 1;
 	transition: 0.5s ease;
 }
@@ -42,54 +65,34 @@ window#waybar.empty #window {
 	transition: none;
 }
 
-#network, #custom-ipv4 {
-	transition: none;
-}
-
 #pulseaudio {
-	transition: 0.5s ease;
+	transition: 0.2s ease;
 }
 #pulseaudio:hover {
-	border-bottom: 1px solid #f8f8f2;
-}
-
-#temperature {
-	transition: none;
-}
-
-#cpu {
-	transition: none;
-}
-
-#memory {
-	transition: none;
-}
-
-#clock {
-	font-weight: 600;
-	transition: none;
-}
-
-#custom-power {
-	transition: 0.5s ease;
-}
-#custom-power:hover {
-	border-bottom: 1px solid #f8f8f2;
+	background: rgba(36, 43, 46, 0.5);
+	border-radius: 6px;
 }
 
 #tray {
-	transition: none;
+	border-radius: 6px;
 }
-
+#tray * {
+	padding: 0 6px;
+	border-left: 1px solid #242b2e;
+}
+#tray *:first-child {
+	border-left: none;
+}
 #tray menu {
-	background: rgba(0, 0, 0, 0.5);
-	color: #f8f8f2;
-}
-
-#custom-updates {
-	transition: none;
+	background: rgba(8, 8, 8, 0.9);
+	border-radius: 6px;
 }
 
 #custom-arch-logo {
 	font-size: 150%;
+}
+
+#custom-arch-logo, #window, #clock {
+	background: transparent;
+	color: #f8f8f2;
 }

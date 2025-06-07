@@ -5,7 +5,7 @@ import = [
 
 [window]
 dimensions = { columns = 140, lines = 35 }
-opacity = 0.925
+opacity = 0.9
 blur = true
 startup_mode = "Maximized"
 dynamic_title = true

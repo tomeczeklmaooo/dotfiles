@@ -1,16 +1,24 @@
 {
 	"layer": "top",
-	"modules-left": ["custom/arch-logo", "hyprland/window"],
-	"modules-center": ["clock"],
-	"modules-right": ["tray", "custom/updates", "pulseaudio", "temperature", "cpu", "memory", "custom/power"],
-	"hyprland/window": {
-		"format": "  {title}",
-		"separate-outputs": true
-	},
+	"margin": "4 4 0 4",
+	"modules-left": [
+		"temperature",
+		"cpu",
+		"memory",
+	],
+	"modules-center": [
+		"custom/arch-logo"
+	],
+	"modules-right": [
+		"tray",
+		"custom/updates",
+		"pulseaudio",
+		"clock"
+	],
 	"pulseaudio": {
 		"tooltip": true,
 		"scroll-step": 5,
-		"format": "{icon} {volume}%",
+		"format": "<b>VOL:</b> {volume}%",
 		"format-icons": {
 			"default": [" ", " ", " "]
 		},
@@ -21,56 +29,44 @@
 		"tooltip": false,
 		"thermal-zone": 3,
 		"critical-threshold": 80,
-		"format-critical": "<span color='#ff0000'>{icon} {temperatureC}°C</span>",
-		"format": "{icon} {temperatureC}°C",
+		"format-critical": "<span color='#ff0000'>TEMP: {temperatureC}°C</span>",
+		"format": "<b>TEMP:</b> {temperatureC}°C",
 		"format-icons": {
-			"default": [" ", " ", " "]
+			"default": ["", "", ""]
 		},
 		"interval": 5
 	},
 	"custom/ipv4": {
-		"format": "  {}",
+		"format": "<b>IP:</b> {}",
 		"exec": "ip -4 addr show | awk '/^\\s*[0-9]+: /{sub(/:/,\"\",$2); current_iface=$2;}/inet /{if (current_iface != \"lo\") {ip_cidr=$2; print current_iface \" \" ip_cidr; exit;}}'",
 		"interval": 5,
 		"tooltip": true
 	},
 	"custom/updates": {
-	    "format": "{} {icon}",
+	    "format": "<b>UPD:</b> {text}",
 	    "return-type": "json",
 	    "format-icons": {
-	        "has-updates": "󱍷",
-	        "updated": "󰂪"
+	        "has-updates": "󱍷 ",
+	        "updated": "󰂪 "
 	    },
 	    "exec-if": "which waybar-module-pacman-updates",
 	    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300 --color-semver-updates"
 	},
-/*	"network": {
-		"tooltip": false,
-		"interface": "enp4s0",
-		"family": "ipv4",
-		"format-ethernet": "{ipaddr}"
-	},*/
 	"custom/arch-logo": {
-		"format": "󰣇",
+		"format": "󰣇 ",
 		"tooltip": false
 	},
-	"custom/power": {
-		"format": " ",
-		"tooltip": false,
-		"on-click": "powermenu"
-	},
 	"cpu": {
-		"tooltip": true,
-		"format": "  {}%"
+		"tooltip": false,
+		"format": "<b>CPU:</b> {avg_frequency} GHz ({usage}%)"
 	},
 	"memory": {
-		"tooltip": true,
-		"format": "  {}%"
+		"tooltip": false,
+		"format": "<b>MEM:</b> {used}/{total} GiB ({percentage}%)"
 	},
 	"clock": {
 		"interval": 1,
-		"format": "  {:%H:%M:%S %d/%m/%Y}",
-		"format-alt": "{:%A, %B %d, %Y (%R)}",
+		"format": "{:%Y, %d %B, %A  %H:%M}",
 		"tooltip-format": "<tt><small>{calendar}</small></tt>",
 		"calendar": {
 			"mode": "year",
@@ -84,15 +80,9 @@
 				"weekdays": "<span color='#ffcc66'><b>{}</b></span>",
 				"today": "<span color='#ffead3'><b><u>{}</u></b></span>"
 			}
-		},
-		"actions": {
-			"on-click-right": "mode",
-			"on-scroll-up": "shift_up",
-			"on-scroll-down": "shift_down"
 		}
 	},
 	"tray": {
-		"icon-size": 16,
-		"spacing": 10
+		"spacing": 0
 	}
 }
