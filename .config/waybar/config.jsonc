@@ -68,7 +68,7 @@
 		"interval": 1,
 		"format": "{:%d/%m/%Y  %H:%M}",
 		"tooltip-format": "{:%H:%M:%S %Z%n%B %d, %Y (%A)}",
-		"on-click": "gnome-calendar"
+		"on-click": "alacritty --class calcure-float -e calcure"
 	},
 	"tray": {
 		"spacing": 0
