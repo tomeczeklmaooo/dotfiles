@@ -25,4 +25,4 @@
 - Use GNU stow to create symlinks: `stow .`
 
 ## Screenshot
-<img src="images/desktop.png">
+<img src="assets/desktop.png">
