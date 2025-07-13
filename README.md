@@ -10,7 +10,7 @@
 | LAUNCHER      | [wofi](https://hg.sr.ht/~scoopta/wofi)                                    |
 | LOCKSCREEN    | [hyprlock](https://wiki.hypr.land/Hypr-Ecosystem/hyprlock)                |
 | IDLE          | [hypridle](https://wiki.hypr.land/Hypr-Ecosystem/hypridle) (for hyprlock) |
-| WALLPAPER     | [hyprpaper](https://wiki.hypr.land/Hypr-Ecosystem/hyprpaper)              |
+| WALLPAPER     | [mpvpaper](https://github.com/GhostNaN/mpvpaper)                          |
 | NOTIFICATIONS | [mako](https://github.com/emersion/mako)                                  |
 | POWER         | [powermenu](https://github.com/shelepuginivan/powermenu)                  |
 
@@ -25,4 +25,4 @@
 - Use GNU stow to create symlinks: `stow .`
 
 ## Screenshot
-<img src="https://github.com/user-attachments/assets/98d9f94a-aa9b-4970-a0a8-1afd57a2654a">
+<img src="images/desktop.png">
