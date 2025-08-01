@@ -5,13 +5,13 @@ import = [
 
 [window]
 dimensions = { columns = 140, lines = 35 }
-opacity = 0.9
-blur = true
+#opacity = 0.9
+#blur = true
 startup_mode = "Maximized"
 dynamic_title = true
 
 [font]
-normal = { family = "Iosevka Extended", style = "Regular" }
+normal = { family = "MxPlus IBM VGA 8x16", style = "Regular" }
 
 [cursor]
 style = { shape = "Block", blinking = "On" }

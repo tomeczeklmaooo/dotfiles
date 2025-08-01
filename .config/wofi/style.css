@@ -1,16 +1,16 @@
 window {
 	margin: 0px;
-	background-color: rgba(8, 8, 8, 0.9);
-	border-radius: 6px;
-	font-family: 'Iosevka Nerd Font', monospace;
+	background-color: #000000;
+	border-radius: 0px;
+	font-family: 'MxPlus IBM VGA 8x16', monospace;
 	font-size: 14px;
 }
 
 #input {
 	margin: 5px;
-	border: none;
-	color: #d8dee9;
-	background-color: rgba(40, 42, 54, 0.9);
+	border: 1px solid #cccccc;
+	color: #cccccc;
+	background-color: #000000;
 }
 
 #inner-box {
@@ -20,7 +20,7 @@ window {
 
 #outer-box {
 	margin: 5px;
-	border: none;
+	border: 1px solid #cccccc;
 }
 
 #scroll {
@@ -31,10 +31,11 @@ window {
 #text {
 	margin: 5px;
 	border: none;
-	color: #d8dee9;
+	color: #cccccc;
 }
 
 #entry:selected {
-	background-color: rgba(40, 42, 54, 0.5);
-	border-radius: 4px;
+	background-color: #000000;
+	border-radius: 0px;
+	border: 1px solid #cccccc;
 }

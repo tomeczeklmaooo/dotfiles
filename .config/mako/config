@@ -1,10 +1,10 @@
 # Colors
 
-background-color=#000000b3
-text-color=#f8f8f2
-border-color=#8080ffaf
-border-radius=6
-progress-color=over #8080ff
+background-color=#000000
+text-color=#cccccc
+border-color=#cccccc
+border-radius=0
+border-size=1
 
 [urgency=high]
 border-color=#ff2c2c

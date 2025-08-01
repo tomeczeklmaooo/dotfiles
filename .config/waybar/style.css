@@ -1,26 +1,31 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "Iosevka Nerd Font";
-	font-size: 14px;
+	font-family: "MxPlus IBM VGA 8x16";
+	font-size: 16px;
 	box-shadow: none;
 	min-height: 0;
-	color: #dadada;
+	color: #000000;
 }
 
 window#waybar {
-	background: rgba(8, 8, 8, 0.9);
-	margin: 4px;
-	border-radius: 6px;
+	background: #cccccc;
+/*	margin: 4px;
+	border-radius: 6px;*/
 }
-window#waybar > box {
+/*window#waybar > box {
 	padding: 0px 4px;
-}
+}*/
 
 tooltip {
-	background: rgba(8, 8, 8, 0.9);
-	border-radius: 6px;
+	background: #000000;
+/*	border-radius: 6px;*/
+	border: 1px solid #cccccc;
 	font-size: 10px;
+}
+
+tooltip label {
+	color: #cccccc;
 }
 
 #custom-arch-logo,
@@ -34,7 +39,7 @@ tooltip {
 #memory,
 #tray {
 	border-radius: 0px;
-	margin: 4px 2px;
+	margin: 2px 2px;
 	padding: 0px 6px;
 }
 
@@ -44,7 +49,7 @@ window#waybar.hidden {
 #window {
 	font-size: 10px;
 	opacity: 1;
-	transition: 0.5s ease;
+/*	transition: 0.5s ease;*/
 }
 window#waybar.empty #window {
 	background: transparent;
@@ -69,30 +74,34 @@ window#waybar.empty #window {
 	transition: 0.2s ease;
 }
 #pulseaudio:hover {
-	background: rgba(36, 43, 46, 0.5);
-	border-radius: 6px;
+	text-decoration: underline;
 }
 
 #tray {
-	border-radius: 6px;
+/*	border-radius: 6px;*/
 }
 #tray * {
 	padding: 0 6px;
-	border-left: 1px solid #242b2e;
+	border-left: 1px solid #000000;
 }
 #tray *:first-child {
 	border-left: none;
 }
 #tray menu {
-	background: rgba(8, 8, 8, 0.9);
-	border-radius: 6px;
+	background: #000000;
+	border: 1px solid #cccccc;
+	color: #cccccc;
+/*	border-radius: 6px;*/
+}
+#tray menu label {
+	color: #cccccc;
 }
 
 #custom-arch-logo {
 	font-size: 150%;
 }
 
-#custom-arch-logo, #window, #clock {
+/*#custom-arch-logo, #window, #clock {
 	background: transparent;
 	color: #f8f8f2;
-}
+}*/

@@ -1,24 +1,32 @@
 {
 	"layer": "top",
-	"margin": "4 4 0 4",
+	"height": 20,
+//	"margin": "4 4 0 4",
 	"modules-left": [
-		"temperature",
-		"cpu",
-		"memory",
+//		"temperature",
+//		"cpu",
+//		"memory",
+		"hyprland/window"
 	],
 	"modules-center": [
-		"custom/arch-logo"
+//		"custom/arch-logo"
+		"clock"
 	],
 	"modules-right": [
 		"tray",
 		"custom/updates",
-		"pulseaudio",
-		"clock"
+		"pulseaudio"
+//		"clock"
 	],
+	"hyprland/window": {
+		"format": "{title}",
+		"separate-outputs": true,
+		"tooltip-format": "{class}"
+	},
 	"pulseaudio": {
 		"tooltip": true,
 		"scroll-step": 5,
-		"format": "<b>VOL:</b> {volume}%",
+		"format": "VOLUME: {volume}%",
 		"format-icons": {
 			"default": [" ", " ", " "]
 		},
@@ -43,14 +51,14 @@
 		"tooltip": true
 	},
 	"custom/updates": {
-	    "format": "<b>UPD:</b> {text}",
+	    "format": "UPDATES: {text}",
 	    "return-type": "json",
 	    "format-icons": {
 	        "has-updates": "󱍷 ",
 	        "updated": "󰂪 "
 	    },
 	    "exec-if": "which waybar-module-pacman-updates",
-	    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300 --color-semver-updates"
+	    "exec": "waybar-module-pacman-updates --interval-seconds 5 --network-interval-seconds 300"
 	},
 	"custom/arch-logo": {
 		"format": "󰣇 ",
@@ -66,8 +74,9 @@
 	},
 	"clock": {
 		"interval": 1,
-		"format": "{:%d/%m/%Y  %H:%M}",
-		"tooltip-format": "{:%H:%M:%S %Z%n%B %d, %Y (%A)}",
+		"format": "{:%a %b %d %Y %H:%M:%S}",
+		"tooltip": false,
+	//	"tooltip-format": "{:%H:%M:%S %Z%n%B %d, %Y (%A)}",
 		"on-click": "alacritty --class calcure-float -e calcure"
 	},
 	"tray": {
