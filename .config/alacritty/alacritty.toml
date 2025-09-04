@@ -11,7 +11,8 @@ startup_mode = "Maximized"
 dynamic_title = true
 
 [font]
-normal = { family = "MxPlus IBM VGA 8x16", style = "Regular" }
+#normal = { family = "MxPlus IBM VGA 8x16", style = "Regular" }
+normal = { family = "Terminus", style = "Regular" }
 
 [cursor]
 style = { shape = "Block", blinking = "On" }

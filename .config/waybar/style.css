@@ -1,7 +1,8 @@
 * {
 	border: none;
 	border-radius: 0;
-	font-family: "MxPlus IBM VGA 8x16";
+	/*font-family: "MxPlus IBM VGA 8x16";*/
+	font-family: "Terminus";
 	font-size: 16px;
 	box-shadow: none;
 	min-height: 0;
@@ -22,7 +23,6 @@ tooltip {
 	background: #000000;
 /*	border-radius: 6px;*/
 	border: 1px solid #cccccc;
-	font-size: 10px;
 }
 
 tooltip label {
