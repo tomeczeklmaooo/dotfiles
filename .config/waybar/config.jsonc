@@ -51,7 +51,7 @@
 		"tooltip": true
 	},
 	"custom/updates": {
-	    "format": "UPDATES: {text}",
+	    "format": "PACMAN: {text}",
 	    "return-type": "json",
 	    "format-icons": {
 	        "has-updates": "󱍷 ",

@@ -1,8 +1,9 @@
 /* The main widget wrapping all the options. */
 #container {
-    background: rgba(8, 8, 8, 0.9);
-    border-radius: 6px;
-    padding: 20px;
+    background: #000000;
+    border-radius: 0px;
+	border: 1px solid #cccccc;
+	padding: 8px;
 }
 
 /* Styles that are applied to all options. */
@@ -12,6 +13,7 @@
 
 /* Styles that are applied to the currently active option. */
 #option.active {
-    background-color: rgba(36, 43, 46, 0.9);
-    border-radius: 6px;
+    background-color: #000000;
+	border: 1px solid #cccccc;
+    border-radius: 0px;
 }

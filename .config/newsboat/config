@@ -1,0 +1,5 @@
+include /usr/share/doc/newsboat/contrib/colorschemes/monochrome
+
+datetime-format "%d/%m/%Y %H:%M:%S"
+auto-reload yes
+cleanup-on-quit yes

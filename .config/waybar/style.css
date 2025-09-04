@@ -5,11 +5,12 @@
 	font-size: 16px;
 	box-shadow: none;
 	min-height: 0;
-	color: #000000;
+	color: #cccccc;
 }
 
 window#waybar {
-	background: #cccccc;
+	background: #000000;
+	border-bottom: 0px dotted #cccccc;
 /*	margin: 4px;
 	border-radius: 6px;*/
 }
