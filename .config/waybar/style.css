@@ -50,6 +50,7 @@ window#waybar.hidden {
 #window {
 	font-size: 10px;
 	opacity: 1;
+	margin: -50px 0; /* workaround to prevent emojis from resizing waybar (top and bottom margin) */
 /*	transition: 0.5s ease;*/
 }
 window#waybar.empty #window {
