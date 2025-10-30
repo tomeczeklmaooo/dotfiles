@@ -4,19 +4,20 @@
 //	"margin": "4 4 0 4",
 	"modules-left": [
 //		"temperature",
-//		"cpu",
-//		"memory",
-		"hyprland/window"
+		"cpu",
+		"memory"
+//		"hyprland/window"
 	],
 	"modules-center": [
 //		"custom/arch-logo"
-		"clock"
+//		"clock"
+		"hyprland/window"
 	],
 	"modules-right": [
 		"tray",
 		"custom/updates",
-		"pulseaudio"
-//		"clock"
+		"pulseaudio",
+		"clock"
 	],
 	"hyprland/window": {
 		"format": "{title}",
@@ -26,7 +27,7 @@
 	"pulseaudio": {
 		"tooltip": true,
 		"scroll-step": 5,
-		"format": "VOLUME: {volume}%",
+		"format": "[VOL] {volume}%",
 		"format-icons": {
 			"default": [" ", " ", " "]
 		},
@@ -51,7 +52,7 @@
 		"tooltip": true
 	},
 	"custom/updates": {
-	    "format": "PACMAN: {text}",
+	    "format": "[PKG] {text}",
 	    "return-type": "json",
 	    "format-icons": {
 	        "has-updates": "󱍷 ",
@@ -66,15 +67,15 @@
 	},
 	"cpu": {
 		"tooltip": false,
-		"format": "<b>CPU:</b> {avg_frequency} GHz ({usage}%)"
+		"format": "[CPU] usage: {usage}% load: {load}"
 	},
 	"memory": {
 		"tooltip": false,
-		"format": "<b>MEM:</b> {used}/{total} GiB ({percentage}%)"
+		"format": "[MEM] used: {used}G/{total}G"
 	},
 	"clock": {
 		"interval": 1,
-		"format": "{:%a %b %d %Y %H:%M:%S}",
+		"format": "{:%Y-%m-%d %H:%M:%S}",
 		"tooltip": false,
 	//	"tooltip-format": "{:%H:%M:%S %Z%n%B %d, %Y (%A)}",
 		"on-click": "alacritty --class calcure-float -e calcure"

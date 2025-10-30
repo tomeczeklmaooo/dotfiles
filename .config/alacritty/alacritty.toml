@@ -16,9 +16,3 @@ normal = { family = "Terminus", style = "Regular" }
 
 [cursor]
 style = { shape = "Block", blinking = "On" }
-
-[keyboard]
-bindings = [
-	{ key = "F11", mods = "Super", action = "ToggleFullscreen" },
-	{ key = "F11", mods = "Super|Shift", action = "ToggleMaximized" }
-]
