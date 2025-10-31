@@ -37,12 +37,12 @@ hibernate:
 # Notice there is no default command for "lock". There is no generic way to
 # lock session, so it is to be configured by the end user.
 lock:
-  enabled: true
+  enabled: false
   order: 2
   icon: "$XDG_CONFIG_HOME/powermenu/icons/lock.svg"
 
 logout:
-  enabled: true
+  enabled: false
   order: 3
   icon: "$XDG_CONFIG_HOME/powermenu/icons/logout.svg"
   command:
